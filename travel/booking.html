@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Anubis Travel - Contact</title>
+		<title>Anubis Travel - Booking</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="hover.css">
 		<link rel="icon" type="image/png" href="assets/anubis-icon-64.png"/>
@@ -15,17 +15,67 @@
 		  		<li><i><a href="sights.html" class="wobble-vertical">Sights</a></i></li>
 		  		<li><i><a href="tours.html" class="wobble-vertical">Tours</a></i></li>
 		  		<li><i><a href="hotels.html" class="wobble-vertical">Hotels</a></i></li>
-		  		<li><i><a href="booking.html" class="wobble-vertical">Booking</a></i></li>
-		  		<li class="active"><i><a href="contact.html" class="wobble-vertical">Contact</a></i></li>
+		  		<li class="active"><i><a href="booking.html" class="wobble-vertical">Booking</a></i></li>
+		  		<li><i><a href="contact.html" class="wobble-vertical">Contact</a></i></li>
 			</ul>
 		</header>
 		<div class="container">
 		    <main>
-		    	<iframe src="contact-content.html" width="98%" height="80%" frameborder="no" scrolling="no"></iframe>
-		    	<noframes> <!--always need to put this here-->
-					Your browser does not support frames. <br>
-					Please install a real browser. 
-				</noframes>
+		    	<h1>
+		    		Time to book your amazing Anubis Egyption travel excursion?
+		    	</h1>
+		    	<form method="post" enctype="text/plain" action="mailto:contact@anubistravel.com">
+		    		<fieldset class="booking">
+		    			<legend>Book your trip</legend>
+		    			<p>
+		    				Enter your party name: 
+		    				<input type="text" placeholder="Party name...">
+		    			</p>
+		    			<p>
+		    				Enter your address:
+		    				<input type="text" placeholder="Address...">
+		    			</p>
+		    			<p>
+		    				How many people are going? 
+		    				<input type="number" name="howMany" min="1" max="8" value="1">
+		    			</p>
+		    			<p>Which sights would you like to see?
+			    			<table>
+			    				<tr>
+			    					<td>Giza Pyramids<input type="checkbox" name="sights" value="pyramids"></td>
+			    					<td>Temple of Karnak<input type="checkbox" name="sights" value="karnak"></td>
+			    					<td>Red Sea Reef<input type="checkbox" name="sights" value="reef"></td>
+			    				</tr>
+			    				<tr>
+			    					<td>River Nile Cruise<input type="checkbox" name="sights" value="nile"></td>
+			    					<td>Valley of the Kings<input type="checkbox" name="sights" value="valley"></td>
+			    					<td>Abu Simbel<input type="checkbox" name="sights" value="abuSimbel"></td>
+			    				</tr>
+			    			</table>
+		    			</p>
+		    			<p>Trip style:
+							<select name="style" size="1">
+								<option value="classic">Classic</option>
+								<option value="family">Family</option>
+								<option value="yolo">Yolo</option>
+							</select>
+						</p>
+						<p>
+							Service level
+							<input type="radio" name="service" value="standard" checked> Standard
+							<input type="radio" name="service" value="basic"> Basic
+							<input type="radio" name="service" value="upgraded"> Upgraded
+						</p>
+						<p>
+							When would you like to book this trip?
+							<input type="date" name="date">
+						</p>
+						<p>
+							<input type="submit" value="Submit">
+							<input type="reset" value="Clear">
+						</p>
+		    		</fieldset>
+		    	</form>
 		    </main>
 		</div>
 		<footer>

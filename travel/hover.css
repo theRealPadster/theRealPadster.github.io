@@ -629,26 +629,6 @@ body:hover*/ {
   animation-iteration-count: 1;
 }
 
-blockquote {
-display: inline-block;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-blockquote:hover {
-  -webkit-animation-name: wobble-vertical;
-  animation-name: wobble-vertical;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
 /* Wobble Horizontal */
 
 @-webkit-keyframes wobble-horizontal {
