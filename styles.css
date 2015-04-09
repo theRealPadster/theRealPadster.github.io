@@ -1,5 +1,5 @@
 html {
-    background: url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed; 
+    background: #323e1a url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
