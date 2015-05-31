@@ -2,9 +2,16 @@
 <html>
 <head>
     <title>theRealPadster</title>
+    <!--need this charset thing so arrows, etc show properly-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" href="assets/favicon-48-dark.png" sizes="48x48">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
 </head>
 <body>
     <nav>
@@ -18,15 +25,22 @@
     </nav>
     
     <main>
+
+    <figure>
+    <figcaption>GNOME-Shell themes</figcaption>
+    <div class="slideshow">
+        <div><a href="http://therealpadster.deviantart.com/art/Mist-511758452"><img src="assets/gnome-shell/mist.png"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/ACID-317583161"><img src="assets/gnome-shell/acid.jpg"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/Contrail-313169671"><img src="assets/gnome-shell/contrail.png"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/Blueberry-Ripple-284674435"><img src="assets/gnome-shell/blueberry_ripple.jpg"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/Frosted-Glass-274811986"><img src="assets/gnome-shell/frosted_glass.jpg"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/Darksilver-271263369"><img src="assets/gnome-shell/darksilver.png"></a></div>
+        <div><a href="http://therealpadster.deviantart.com/art/Minty-Fresh-256268018"><img src="assets/gnome-shell/minty_fresh.jpg"></a></div>
+
+    </div>
+        
+    </figure>
     
-    <article>
-        <h3>Hello world!</h3>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <h3>furg</h3>
-        <p>Just a test article...</p>
-    </article>
             
     </main>
 
@@ -41,5 +55,21 @@
             <img src="assets/lg_icon_kit/Flat Minimalistic Circles/32x32 PNG/github.png"/>
         </a>
     </footer>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slideshow').slick({
+                dots: true,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+
 </body>
 </html>
