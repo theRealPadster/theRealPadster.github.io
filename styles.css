@@ -1,5 +1,5 @@
 html {
-    background: #323e1a url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed; 
+    background: #323e1a url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -63,9 +63,9 @@ article h3 {
     margin: 0em;
     padding: 0.5em;
     /*border-bottom: 1px solid rgba(0,0,0,0.4);*/
-    
+
     box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.6);
-    
+
 background: -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.25) 42%, rgba(255,255,255,0.22) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(42%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0.22))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* Chrome10+,Safari5.1+ */
@@ -78,6 +78,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ffffff', e
 article p {
     padding: 0.5em;
     margin: 0em;
+}
+
+article img {
+    margin: 0.5em;
+}
+
+/*remove underlines on lightbox links*/
+a[data-lightbox] {
+    text-decoration: none;
 }
 
 .active-page,
@@ -108,6 +117,10 @@ main {
     height: 20%;
     border: 4px solid rgba(255,255,255,0.5);
     border-radius: 2px;
+    /*lowest common denominator for theme previews*/
+    max-width: 1600px;
+    /*TODO - is this necessary?*/
+    max-height: 900px;
 }
 
 .slideshow img {
@@ -154,3 +167,7 @@ footer img:focus {
 footer a {
     text-decoration: none;
 }
+
+/*
+TODO - optimize the gnome-shell images for loading over internet/lazy loading
+*/
