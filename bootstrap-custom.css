@@ -1,0 +1,26 @@
+body {
+    background: #323e1a url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-transparent {
+    background: transparent;
+    font-weight: bold;
+    color: #eee;
+    transition-duration: 100ms;
+}
+
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .active > a {
+
+    color: #eee !important;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+}
+.navbar-brand,
+.navbar-nav > li > a {
+    background: transparent;
+  color: #ccc;
+}
