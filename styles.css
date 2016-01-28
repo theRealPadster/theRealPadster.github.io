@@ -66,16 +66,17 @@ article h3 {
 
     box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.6);
 
-background: -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.25) 42%, rgba(255,255,255,0.22) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(42%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0.22))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ffffff', endColorstr='#38ffffff',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.25) 42%, rgba(255,255,255,0.22) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(42%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0.22))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.25) 42%,rgba(255,255,255,0.22) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ffffff', endColorstr='#38ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-article p {
+article p,
+article form {
     padding: 0.5em;
     margin: 0em;
 }
@@ -102,6 +103,28 @@ a:hover {
 a:link,
 a:visited {
     color: #ccc;
+}
+
+/*forms*/
+
+input,
+select,
+textarea {
+    margin: 0.5em;
+}
+
+textarea {
+    position: relative;
+    width: 80%;
+    min-height: 8em;
+}
+
+form label {
+    margin-bottom: 1em;
+}
+
+.errorText {
+    color: #f22;
 }
 
 /*sticky-footer stuff*/
