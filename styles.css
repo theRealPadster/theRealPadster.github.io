@@ -12,12 +12,15 @@ body {
 }
 
 nav {
+    position: fixed;
     /*was #eee*/
     background: transparent;
     font-weight: bold;
     color: #eee;
     transition-duration: 100ms;
     padding: 0.5em;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 nav ul {
@@ -45,6 +48,10 @@ nav img {
 nav img:hover {
     margin: 0em;
     transition-duration: 200ms;
+}
+
+.spacer {
+    height: 3em;
 }
 
 article {
@@ -198,3 +205,9 @@ footer a {
 /*
 TODO - optimize the gnome-shell images for loading over internet/lazy loading
 */
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
