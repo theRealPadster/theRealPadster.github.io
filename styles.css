@@ -1,3 +1,6 @@
+html, body {
+}
+
 html {
     background: #323e1a url('assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -8,11 +11,42 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0px;
+    margin: 0;
+}
+
+input[type=checkbox] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    z-index: 1000;
+}
+
+input[type=checkbox]:not(:checked) {
+    background-image: url("assets/lg_icon_kit/Knock Out White Circles/32x32 PNG/android.png");
+}
+
+input[type=checkbox]:checked {
+    background-image: url("assets/lg_icon_kit/Knock Out White Circles/32x32 PNG/apple.png");
+}
+
+aside {
+    width: 75%;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    transition-duration: 0ms;
+    background-color: rgba(0,0,0,0.8);
+    left: -75%;
 }
 
 nav {
-    position: fixed;
     /*was #eee*/
     background: transparent;
     font-weight: bold;
@@ -20,18 +54,19 @@ nav {
     transition-duration: 100ms;
     padding: 0.5em;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 nav ul {
-    margin: 0px;
+    margin: 0;
     padding: 1em;
 }
 
 nav li {
     list-style: none;
-    display: inline-block;
-    padding: 0em 1em;
+    margin: 1em 0;
+    padding: 0 1em;
+
+    display: block;
 }
 
 nav img {
@@ -41,37 +76,35 @@ nav img {
     float: left;
     background: #eee;
     border-radius: 1.5em;
-    margin: 0em 0.5em 0em 0em;
+    margin: 0 0.5em 0 0;
     /* neat trickmargin: -1.5em;*/
 }
 
 nav img:hover {
-    margin: 0em;
+    margin: 0;
     transition-duration: 200ms;
 }
 
 .spacer {
-    height: 3em;
+    height: 2em;
 }
 
 article {
     margin: 1em;
-    min-width: 40em;
-    max-width: 60em;
     display: inline-block;
     background: rgba(255,255,255,0.3);
     /*TODO - put this in the actual title spot (h3)?*/
     border-top: 1px solid rgba(255,255,255,0.8);
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
     float: left;
 }
 
 article h3 {
-    margin: 0em;
+    margin: 0;
     padding: 0.5em;
     /*border-bottom: 1px solid rgba(0,0,0,0.4);*/
 
-    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.6);
 
     background: -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.25) 42%, rgba(255,255,255,0.22) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(42%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0.22))); /* Chrome,Safari4+ */
@@ -85,7 +118,7 @@ article h3 {
 article p,
 article form {
     padding: 0.5em;
-    margin: 0em;
+    margin: 0;
 }
 
 article img {
@@ -93,7 +126,7 @@ article img {
 }
 
 article ul {
-    margin: 0em 0.3em;
+    margin: 0 0.3em;
 }
 
 /*remove underlines on lightbox links*/
@@ -104,7 +137,7 @@ a[data-lightbox] {
 .active-page,
 a:hover {
     color: #eee !important;
-    text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
 a:link,
@@ -147,7 +180,7 @@ main {
 }
 
 .slideshow {
-    margin: 0em 2em;
+    margin: 0 2em;
     height: 20%;
     border: 4px solid rgba(255,255,255,0.5);
     border-radius: 2px;
@@ -162,15 +195,15 @@ main {
 }
 
 figure {
-    margin: 0em;
+    margin: 0;
 }
 
 figcaption {
     font-weight: bold;
     font-size: 2em;
     color: #eee;
-    margin: 0em;
-    padding: 0em 0.2em 0.4em 0.2em;
+    margin: 0;
+    padding: 0 0.2em 0.4em 0.2em;
     text-align: center;
 }
 
@@ -188,7 +221,7 @@ footer img {
     margin: 8px;
     /*padding: 8px 0px 8px 8px;*/
     border-radius: 32px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
     opacity: 0.6;
     transition-duration: 100ms;
 }
@@ -206,8 +239,90 @@ footer a {
 TODO - optimize the gnome-shell images for loading over internet/lazy loading
 */
 
+
 @media only screen and (max-width: 768px) {
     body {
         background-color: lightblue;
+    }
+
+    nav img:hover {
+
+    }
+}
+
+.menu {
+
+}
+
+
+input[type=checkbox]:checked + aside {
+    left: 0;
+}
+
+/*
+input[type=checkbox]:checked + aside nav li{
+    display: block;
+    margin: 1em 0em;
+}
+
+input[type=checkbox]:checked + aside nav img{
+    display: none;
+}*/
+
+@media only screen and (min-width: 768px) {
+    article {
+        min-width: 40em;
+        max-width: 60em;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+    
+    aside {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        left: 0;
+        transition-duration: 0ms;
+    }
+
+    nav {
+        /*was #eee*/
+        background: transparent;
+        font-weight: bold;
+        color: #eee;
+        transition-duration: 100ms;
+        padding: 0.5em;
+        width: 100%;
+        left: 0;
+    }
+
+    nav ul {
+        margin: 0.4em 0 0 0;
+        padding: 0;
+    }
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 1em;
+        margin: 0;
+    }
+
+    nav img {
+        height: 2.7em;
+        width: 2.7em;
+        padding: 0.3em 0.4em 0.2em 0.1em;
+        float: left;
+        background: #eee;
+        border-radius: 1.5em;
+        margin: 0 0.5em 0 0;
+    }
+
+    nav img:hover {
+        margin: 0;
+        transition-duration: 200ms;
     }
 }
