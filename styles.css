@@ -14,36 +14,37 @@ body {
     margin: 0;
 }
 
-input[type=checkbox] {
+#menuIcon {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     -webkit-appearance: none;
     outline: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     position: absolute;
-    left: 0px;
+    left: 1em;
+    top: 0.5em;
     z-index: 1000;
 }
 
-input[type=checkbox]:not(:checked) {
-    background-image: url("assets/lg_icon_kit/Knock Out White Circles/32x32 PNG/android.png");
+#menuIcon:not(:checked) {
+    background-image: url("assets/ic_menu_white_24px.svg");
 }
 
-input[type=checkbox]:checked {
-    background-image: url("assets/lg_icon_kit/Knock Out White Circles/32x32 PNG/apple.png");
+#menuIcon:checked {
+    background-image: url("assets/ic_arrow_back_white_24px.svg");
 }
 
 aside {
-    width: 75%;
+    width: 20em;
     height: 100vh;
     top: 0;
     position: fixed;
     transition-duration: 0ms;
-    background-color: rgba(0,0,0,0.8);
-    left: -75%;
+    background-color: rgba(0,0,0,0.85);
+    left: -20em;
 }
 
 nav {
@@ -61,6 +62,10 @@ nav ul {
     padding: 1em;
 }
 
+nav .logo {
+    display: none;
+}
+
 nav li {
     list-style: none;
     margin: 1em 0;
@@ -69,24 +74,28 @@ nav li {
     display: block;
 }
 
-nav img {
+.logo {
     height: 2.7em;
     width: 2.7em;
     padding: 0.3em 0.4em 0.2em 0.1em;
-    float: left;
     background: #eee;
     border-radius: 1.5em;
-    margin: 0 0.5em 0 0;
-    /* neat trickmargin: -1.5em;*/
-}
-
-nav img:hover {
-    margin: 0;
-    transition-duration: 200ms;
+    margin-left: 0.5em;
 }
 
 .spacer {
-    height: 2em;
+    height: 3em;
+}
+
+.spacer .logo {
+    margin: 0.5em 0 0 3em;
+}
+
+.spacer span {
+    position: relative;
+    top: -1em;
+    left: 0.5em;
+    font-weight: bold;
 }
 
 article {
@@ -244,30 +253,12 @@ TODO - optimize the gnome-shell images for loading over internet/lazy loading
     body {
         background-color: lightblue;
     }
-
-    nav img:hover {
-
-    }
-}
-
-.menu {
-
 }
 
 
 input[type=checkbox]:checked + aside {
     left: 0;
 }
-
-/*
-input[type=checkbox]:checked + aside nav li{
-    display: block;
-    margin: 1em 0em;
-}
-
-input[type=checkbox]:checked + aside nav img{
-    display: none;
-}*/
 
 @media only screen and (min-width: 768px) {
     article {
@@ -300,7 +291,6 @@ input[type=checkbox]:checked + aside nav img{
     }
 
     nav ul {
-        margin: 0.4em 0 0 0;
         padding: 0;
     }
 
@@ -308,21 +298,15 @@ input[type=checkbox]:checked + aside nav img{
         list-style: none;
         display: inline-block;
         padding: 0 1em;
-        margin: 0;
+        position: relative;
+        top: -1em;
     }
 
-    nav img {
-        height: 2.7em;
-        width: 2.7em;
-        padding: 0.3em 0.4em 0.2em 0.1em;
-        float: left;
-        background: #eee;
-        border-radius: 1.5em;
-        margin: 0 0.5em 0 0;
+    nav .logo {
+        display: inherit;
     }
 
-    nav img:hover {
-        margin: 0;
-        transition-duration: 200ms;
+    .spacer * {
+        display: none;
     }
 }
