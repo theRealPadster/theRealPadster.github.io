@@ -92,6 +92,7 @@ nav li {
 }
 
 .spacer span {
+    color: #eee;
     position: relative;
     top: -1em;
     left: 0.5em;
@@ -105,7 +106,7 @@ article {
     /*TODO - put this in the actual title spot (h3)?*/
     border-top: 1px solid rgba(255,255,255,0.8);
     box-shadow: 0 0 6px rgba(0,0,0,0.4);
-    float: left;
+    /*float: left;*/
 }
 
 article h3 {
@@ -249,14 +250,15 @@ TODO - optimize the gnome-shell images for loading over internet/lazy loading
 */
 
 
+/*only on mobile
 @media only screen and (max-width: 768px) {
     body {
         background-color: lightblue;
     }
 }
+*/
 
-
-input[type=checkbox]:checked + aside {
+#menuIcon:checked + aside {
     left: 0;
 }
 
