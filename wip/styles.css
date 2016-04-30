@@ -1,6 +1,3 @@
-html, body {
-}
-
 html {
     background: #323e1a url('../assets/bg-image-2560x1920-q90.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -39,12 +36,13 @@ body {
 
 aside {
     width: 20em;
-    height: 100vh;
+    height: 200vh;
     top: 0;
     position: fixed;
-    transition-duration: 0ms;
+    transition-duration: 300ms;
     background-color: rgba(0,0,0,0.85);
     left: -20em;
+    z-index: 999;
 }
 
 nav {
@@ -68,7 +66,7 @@ nav .logo {
 
 nav li {
     list-style: none;
-    margin: 1em 0;
+    margin: 1.5em 0;
     padding: 0 1em;
 
     display: block;
@@ -260,6 +258,11 @@ TODO - optimize the gnome-shell images for loading over internet/lazy loading
 
 #menuIcon:checked + aside {
     left: 0;
+
+}
+
+#menuIcon:checked {
+    position: fixed;
 }
 
 @media only screen and (min-width: 768px) {
