@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    color: white;
+    padding: 1em;
+}
+
+section {
+    padding: 1em;
+
+    &#hero {
+        background: green url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
+        background-size: cover;
+        height: 600px;
+        color: white;
+        box-shadow: inset 0px -1em 1em rgba(0,0,0,0.2);
+        padding-top: 1em;
+
+        .wrapper {
+            margin-top: 150px;
+            position: fixed;
+        }
+
+        z-index: 1;
+    }
+
+    &#section2 {
+        background-color: #eee;
+        height: 300px;
+        box-shadow: inset 0px -0.2em 0.5em rgba(0,0,0,0.2);
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.wrapper {
+    max-width: 60%;
+    min-width: 800px;
+    margin: 0px auto;
+}
+
+.third {
+    width: 33.33%;
+    display: inline-block;
+    float: left;
+}
+
+.half {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.centre {
+    text-align: center;
+}
+
+.profile {
+    background-color: #eee;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    padding: 20px;
+}
+
+.button {
+    padding: 0.6em 0.8em;
+    border-radius: 2em;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(0, 0, 0, 0.05)
+    );
+
+    color: white;
+    text-decoration: none;
+}
+
+.green {
+    background-color: rgb(98, 195, 52);
+}
+
+.purple {
+    background-color: rgb(147, 53, 213);
+}
+
+.blue {
+    background-color: rgb(53, 143, 215);
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+
+    span {
+        display: block;
+    }
+
+    /*icons from https://dribbble.com/shots/1427054-Flat-Minimalistic-Social-Icons*/
+    img {
+        width: 32px;
+        height: 32px;
+        margin: 8px;
+        border-radius: 32px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+        transition-duration: 100ms;
+    }
+
+    img:hover,
+    img:focus {
+        /*TODO - tweak*/
+        box-shadow: 0px 1px 6px rgba(0,0,0,0.6);
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
