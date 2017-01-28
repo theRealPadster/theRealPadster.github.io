@@ -32,17 +32,28 @@ section {
 
     &#section2 {
         background-color: #eee;
-        height: 300px;
+        min-height: 350px;
         box-shadow: inset 0px -0.2em 0.5em rgba(0,0,0,0.2);
         z-index: 2;
         position: relative;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper div {
+        width: 100% !important;
+        float: none;
+    }
+}
+
 .wrapper {
     max-width: 60%;
-    min-width: 800px;
+    min-width: 200px;
     margin: 0px auto;
+
+    p {
+        padding: 0em 0.4em;
+    }
 }
 
 .third {
@@ -97,6 +108,9 @@ section {
 footer {
     padding: 2em;
     text-align: center;
+    position: relative;
+    z-index: 99;
+    background-color: white;
 
     span {
         display: block;
@@ -120,5 +134,9 @@ footer {
 
     a {
         text-decoration: none;
+    }
+
+    #googleplus {
+        fill: red;
     }
 }
