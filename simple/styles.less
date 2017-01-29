@@ -11,25 +11,23 @@ header {
     padding: 1em;
 }
 
-main {
-    overflow-y: hidden;
-}
-
 section {
     padding: 1em;
-    overflow-y: scroll;
 
     &#hero {
-        background: green url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), green url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
         background-size: cover;
         height: 600px;
         color: white;
         box-shadow: inset 0px -1em 1em rgba(0,0,0,0.2);
-        padding-top: 1em;    
+        padding-top: 1em;
+        text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 
         .wrapper {
             margin-top: 150px;
             position: fixed;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
         z-index: 1;
@@ -52,7 +50,7 @@ section {
 }
 
 .wrapper {
-    max-width: 60%;
+    max-width: 1000px;
     min-width: 200px;
     margin: 0px auto;
 
