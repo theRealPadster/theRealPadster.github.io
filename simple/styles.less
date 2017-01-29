@@ -11,8 +11,13 @@ header {
     padding: 1em;
 }
 
+main {
+    overflow-y: hidden;
+}
+
 section {
     padding: 1em;
+    overflow-y: scroll;
 
     &#hero {
         background: green url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
@@ -20,7 +25,7 @@ section {
         height: 600px;
         color: white;
         box-shadow: inset 0px -1em 1em rgba(0,0,0,0.2);
-        padding-top: 1em;
+        padding-top: 1em;    
 
         .wrapper {
             margin-top: 150px;

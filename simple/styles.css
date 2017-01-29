@@ -9,8 +9,12 @@ header {
   color: white;
   padding: 1em;
 }
+main {
+  overflow-y: hidden;
+}
 section {
   padding: 1em;
+  overflow-y: scroll;
 }
 section#hero {
   background: green url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
