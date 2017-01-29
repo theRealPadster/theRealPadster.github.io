@@ -11,6 +11,10 @@ header {
 }
 section {
   padding: 1em;
+  position: relative;
+  background-color: #eee;
+  box-shadow: inset 0px -0.2em 0.5em rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 section#hero {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), #2d391b url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
@@ -28,12 +32,8 @@ section#hero .wrapper {
   left: 50%;
   transform: translate(-50%, 0);
 }
-section#section2 {
-  background-color: #eee;
-  min-height: 350px;
-  box-shadow: inset 0px -0.2em 0.5em rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  position: relative;
+section:nth-child(even) {
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   .wrapper div {
@@ -50,14 +50,12 @@ section#section2 {
   padding: 0em 0.4em;
 }
 .third {
-  width: 33.33%;
+  width: 33%;
   display: inline-block;
-  float: left;
 }
 .half {
-  width: 50%;
+  width: 49%;
   display: inline-block;
-  float: left;
 }
 .centre {
   text-align: center;
