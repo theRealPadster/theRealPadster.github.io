@@ -30,9 +30,9 @@ section {
 
         .wrapper {
             margin-top: 150px;
-            position: fixed;
-            left: 50%;
-            transform: translate(-50%, 0);
+            // position: fixed;
+            // left: 50%;
+            // transform: translate(-50%, 0); //TODO - some mobile browsers don't like this...
         }
     }
 
@@ -46,6 +46,11 @@ section {
         width: 100% !important;
         float: none;
     }
+
+    section#hero .wrapper {
+        margin-top: 0px;
+    }
+
 }
 
 .wrapper {
@@ -56,6 +61,11 @@ section {
     p {
         padding: 0em 0.4em;
     }
+}
+
+.full-fixed {
+    width: 100%;
+    position: fixed;
 }
 
 .third {
@@ -134,9 +144,5 @@ footer {
 
     a {
         text-decoration: none;
-    }
-
-    #googleplus {
-        fill: red;
     }
 }

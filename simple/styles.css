@@ -28,9 +28,6 @@ section#hero {
 }
 section#hero .wrapper {
   margin-top: 150px;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 section:nth-child(even) {
   background-color: #fff;
@@ -40,6 +37,9 @@ section:nth-child(even) {
     width: 100% !important;
     float: none;
   }
+  section#hero .wrapper {
+    margin-top: 0px;
+  }
 }
 .wrapper {
   max-width: 1000px;
@@ -48,6 +48,10 @@ section:nth-child(even) {
 }
 .wrapper p {
   padding: 0em 0.4em;
+}
+.full-fixed {
+  width: 100%;
+  position: fixed;
 }
 .third {
   width: 33%;
@@ -109,7 +113,4 @@ footer img:focus {
 }
 footer a {
   text-decoration: none;
-}
-footer #googleplus {
-  fill: red;
 }
