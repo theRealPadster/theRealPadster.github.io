@@ -53,6 +53,19 @@ section:nth-child(even) {
 .wrapper p {
   padding: 0em 0.4em;
 }
+.slideshow img {
+  max-width: 100%;
+  margin: 0px auto;
+}
+.slick-arrow {
+  z-index: 1;
+}
+.slick-arrow.slick-prev {
+  left: 0px;
+}
+.slick-arrow.slick-next {
+  right: 0px;
+}
 .full-fixed {
   width: 100%;
   position: fixed;
@@ -64,6 +77,8 @@ section:nth-child(even) {
 .half {
   width: 49%;
   display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 .centre {
   text-align: center;

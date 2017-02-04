@@ -17,9 +17,10 @@ section {
     background-color: #eee;
     box-shadow: inset 0px -0.2em 0.5em rgba(0,0,0,0.2);
     z-index: 2;
+    // background: linear-gradient(#fff, #eee 75%) !important;
 
     &#hero {
-        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), #2d391b url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), #2d391b url("../assets/bg-image-2560x1920-q90.jpg") no-repeat bottom right fixed;
         background-size: cover;
         height: 600px;
         color: white;
@@ -68,6 +69,18 @@ section {
     }
 }
 
+.slideshow img {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.slick-arrow {
+    z-index: 1;
+
+    &.slick-prev { left: 0px; }
+    &.slick-next { right: 0px; }
+}
+
 .full-fixed {
     width: 100%;
     position: fixed;
@@ -81,6 +94,8 @@ section {
 .half {
     width: 49%; //TODO - maybe clean this up eventually
     display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .centre {
