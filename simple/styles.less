@@ -50,13 +50,10 @@ section {
 
         .wrapper {
             margin-top: 150px;
-            // position: fixed;
-            // left: 50%;
-            // transform: translate(-50%, 0); //TODO - some mobile browsers don't like this...
         }
     }
 
-    &:nth-child(even) {
+    &:nth-child(4n+4) {
         background-color: #fff;
     }
 }
@@ -64,7 +61,6 @@ section {
 @media screen and (max-width: 768px) {
     div.wrapper div {
         width: 100%;
-        // float: none;
     }
 
     section#hero .wrapper {
@@ -108,6 +104,7 @@ section {
 .third {
     width: 33%; //TODO - maybe clean this up eventually
     display: inline-block;
+    vertical-align: top;
 }
 
 .half {

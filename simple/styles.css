@@ -42,7 +42,7 @@ section#hero:before {
 section#hero .wrapper {
   margin-top: 150px;
 }
-section:nth-child(even) {
+section:nth-child(4n+4) {
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -85,6 +85,7 @@ section:nth-child(even) {
 .third {
   width: 33%;
   display: inline-block;
+  vertical-align: top;
 }
 .half {
   width: 49%;
