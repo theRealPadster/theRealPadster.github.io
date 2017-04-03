@@ -32,7 +32,7 @@ section#hero {
 }
 @media (max-width: 768px) {
   section#hero {
-    z-index: 0;
+    z-index: -1;
   }
 }
 section#hero:before {
