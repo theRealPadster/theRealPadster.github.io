@@ -68,9 +68,6 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    div.wrapper div {
-        width: 100%;
-    }
 
     section#hero .wrapper {
         margin-top: 0px;
@@ -87,6 +84,7 @@ section {
     max-width: 1000px;
     min-width: 200px;
     margin: 0px auto;
+    overflow-y: hidden;
 
     p {
         padding: 0em 0.4em;
@@ -128,19 +126,6 @@ section {
     position: fixed;
 }
 
-.third {
-    width: 33%; //TODO - maybe clean this up eventually
-    display: inline-block;
-    vertical-align: top;
-}
-
-.half {
-    width: 49%; //TODO - maybe clean this up eventually
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
 .centre {
     text-align: center;
 }
@@ -151,7 +136,8 @@ section {
     border-radius: 250px;
     padding: 20px;
     background: #eee url("../assets/p-scoured.svg") no-repeat center center;
-    background-size: 200px;
+    background-size: contain;
+    margin: 0px auto;
 
     // &:hover {
     //     background: #eee url("../assets/kkt-photo.jpg") no-repeat center center;
