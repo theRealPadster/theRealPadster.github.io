@@ -1,3 +1,5 @@
+// 1200, 992, 768
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
@@ -67,17 +69,19 @@ section {
     }
 }
 
-@media screen and (max-width: 768px) {
+//TODO - what's going on here? (funny jumping)
+@media screen and (max-width: 991px) {
 
     section#hero .wrapper {
         margin-top: 0px;
     }
 
-    .profile {
-        max-height: 150px;
-        max-width: 150px;
+    @media screen and (max-width: 767px) {
+        .profile {
+            max-height: 150px;
+            max-width: 150px;
+        }
     }
-
 }
 
 .wrapper {
