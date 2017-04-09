@@ -56,12 +56,12 @@ section#hero .wrapper {
 section:nth-child(4n+4) {
   background-color: #fff;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   section#hero .wrapper {
     margin-top: 0px;
   }
 }
-@media screen and (max-width: 991px) and screen and (max-width: 767px) {
+@media (max-width: 991px) and (max-width: 767px) {
   .profile {
     max-height: 150px;
     max-width: 150px;
