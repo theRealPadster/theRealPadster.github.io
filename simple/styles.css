@@ -35,6 +35,11 @@ section#hero {
     z-index: -1;
   }
 }
+@media (max-width: 767px) {
+  section#hero {
+    height: 400px;
+  }
+}
 section#hero:before {
   content: "";
   display: block;
