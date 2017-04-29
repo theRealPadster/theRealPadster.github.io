@@ -78,7 +78,7 @@
   // Attach event handlers to the new DOM elements. click click click
   Lightbox.prototype.build = function() {
     var self = this;
-    $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a><a class="lb-big"></a></div></div></div></div>').appendTo($('body'));
+    $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a><a class="lb-big"></a><a class="lb-link"></a></div></div></div></div>').appendTo($('body'));
 
     // Cache jQuery objects
     this.$lightbox       = $('#lightbox');
@@ -142,6 +142,12 @@
       window.open(theImage.attr('src'), '_blank');
       return false;
     });
+
+    //added external link functionality
+    this.$lightbox.find('.lb-link').on('click', function() {
+      window.open(theImage.attr('data-link'), '_blank');
+      return false;
+    });
   };
 
   // Show overlay and lightbox. If the image is part of a set, add siblings to album array.
@@ -163,6 +169,8 @@
     function addToAlbum($link) {
       self.album.push({
         link: $link.attr('href'),
+        //added external link functionality
+        datalink: $link.attr('data-link'),
         title: $link.attr('data-title') || $link.attr('title')
       });
     }
@@ -172,7 +180,9 @@
     var $links;
 
     if (dataLightboxValue) {
-      $links = $($link.prop('tagName') + '[data-lightbox="' + dataLightboxValue + '"]');
+      // don't grab Slick slider cloned elements
+      var selector = $link.prop('tagName') + '[data-lightbox="' + dataLightboxValue + '"]';
+      $links = $(selector + ':not(.slick-cloned ' + selector + ')');
       for (var i = 0; i < $links.length; i = ++i) {
         addToAlbum($($links[i]));
         if ($links[i] === $link[0]) {
@@ -232,6 +242,8 @@
       var windowWidth;
 
       $image.attr('src', self.album[imageNumber].link);
+      //added external link functionality
+      $image.attr('data-link', self.album[imageNumber].datalink);
 
       $preloader = $(preloader);
 
