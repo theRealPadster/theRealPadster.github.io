@@ -167,7 +167,6 @@ body:after {
 }
 
 .lb-data .lb-details {
-  width: 85%;
   float: left;
   text-align: left;
   line-height: 1.1em;
@@ -236,7 +235,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/big.png) top right no-repeat;
+  background: url(../images/link.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
