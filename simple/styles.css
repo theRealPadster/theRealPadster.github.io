@@ -120,9 +120,14 @@ section:nth-child(4n+4) {
   width: 250px;
   border-radius: 250px;
   padding: 20px;
-  background: #eee url("../assets/p-scoured.svg") no-repeat center center;
+  background: #eee url("../assets/kkt-photo.jpg") no-repeat center center;
   background-size: contain;
   margin: 0px auto;
+  border: 5px solid white;
+}
+.profile:hover {
+  background: #eee url("../assets/p-scoured.svg") no-repeat center center;
+  background-size: contain;
 }
 .button {
   padding: 0.6em 0.8em;
@@ -165,11 +170,12 @@ footer img {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
   transition-duration: 100ms;
 }
-footer img:hover,
-footer img:focus {
+footer a:hover,
+footer a:focus {
+  text-decoration: none !important;
+}
+footer a:hover img,
+footer a:focus img {
   /*TODO - tweak*/
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
-}
-footer a {
-  text-decoration: none;
 }

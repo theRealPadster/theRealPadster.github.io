@@ -144,15 +144,17 @@ section {
     width: 250px;
     border-radius: 250px;
     padding: 20px;
-    background: #eee url("../assets/p-scoured.svg") no-repeat center center;
+    background: #eee url("../assets/kkt-photo.jpg") no-repeat center center;
     background-size: contain;
     margin: 0px auto;
+    // box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    border: 5px solid white;
+    // box-shadow: 0 0 0px 3px black;
 
-    // &:hover {
-    //     background: #eee url("../assets/kkt-photo.jpg") no-repeat center center;
-    //     box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-    //     background-size: 290px;
-    // }
+    &:hover {
+        background: #eee url("../assets/p-scoured.svg") no-repeat center center;
+        background-size: contain;
+    }
 }
 
 .button {
@@ -212,13 +214,12 @@ footer {
         transition-duration: 100ms;
     }
 
-    img:hover,
-    img:focus {
-        /*TODO - tweak*/
-        box-shadow: 0px 1px 6px rgba(0,0,0,0.6);
-    }
-
-    a {
-        text-decoration: none;
+    a:hover,
+    a:focus {
+        text-decoration: none !important;
+        img {
+            /*TODO - tweak*/
+            box-shadow: 0px 1px 6px rgba(0,0,0,0.6);
+        }
     }
 }
