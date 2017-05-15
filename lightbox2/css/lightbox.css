@@ -191,7 +191,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/close.png) top right no-repeat;
+  background: url(../images/new-close.svg) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -213,7 +213,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/big.png) top right no-repeat;
+  background: url(../images/new-zoom.svg) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -222,6 +222,12 @@ body:after {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+
+  position: relative;
+  top: 1px;
+  width: 28px;
+  height: 28px;
+  right: -1px;
 }
 
 .lb-data .lb-big:hover {
@@ -235,7 +241,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/link.png) top right no-repeat;
+  background: url(../images/new-link.svg) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
