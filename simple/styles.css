@@ -151,6 +151,11 @@ section:nth-child(4n+4) {
 .blue {
   background-color: #358fd7;
 }
+@media (min-width: 768px) {
+  .col2 {
+    column-count: 2;
+  }
+}
 footer {
   padding: 2em;
   text-align: center;
