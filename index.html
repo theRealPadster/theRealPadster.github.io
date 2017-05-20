@@ -1,64 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>theRealPadster</title>
+    <title>Isaac Maier</title>
     <link rel="icon" href="assets/favicon-48-dark.png" sizes="48x48">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick-theme.css"/>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lightbox2/css/lightbox.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Francois+One" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="#"><img src="assets/p-scoured.svg"></a>
-        <ul>
-            <a href="#" class="active-page"><li>Home</li></a>
-            <a href="customization.html"><li>Customization</li></a>
-            <a href="photography.html"><li>Photography</li></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><li>Anubis Travel</li></a>
-            <a href="travel/index.html"><li>Anubis Travel</li></a>
-        </ul>
-    </nav>
-
     <main>
-
-    <article>
-        <h3>Hello world!</h3>
-        <p>I'm a computer geek, who's into Linux, web development, programming, and PC gaming. I enjoy reading fantasy and sci-fi. </p>
-        <h3>Linux Customization</h3>
-        <p> I like customizing my Linux PC, and have done themes for GNOME-Shell, Metacity, GTK2, and Emerald. Currently I'm just theming GNOME-Shell. I also like making photography wallpapers and occasionally icons. </p>
-        <h3>Programming</h3>
-        <p>
-            I like writing code and making computers do things. <br>
-            I have experience programming in:
-            <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>Java</li>
-                <li>Bash scripting</li>
-            </ul>
-        </p>
-        <h3>Photography</h3>
-        <p>Photography is something else I like to do, capturing the beauty of the world and expressing my creativity. </p>
-    </article>
-
+        <a id="top"></a>
+        <section id="hero">
+            <div class="full-fixed">
+                <div class="wrapper">
+                    <div class="col-sm-12">
+                        <div class="col-md-6 col-md-offset-0 col-sm-4 col-sm-offset-4">
+                            <div class="profile"></div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-0 col-sm-4 col-sm-offset-4">
+                            <h1>Isaac Maier</h1>
+                            <ul>
+                                <li>
+                                    Software developer. Front end. Back end.
+                                </li>
+                                <li>
+                                    Wannabe amateur photographer
+                                </li>
+                                <li>
+                                    Tabletop game enthusiast
+                                </li>
+                            </ul>
+                            <a class="green button" href="https://github.com/theRealPadster" target="_blank">Check me out on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a id="intro"></a>
+        <section>
+            <div class="wrapper">
+                <div class="col-sm-4">
+                    <h2>I like programming</h2>
+                    <p>
+                        I like writing code and bending machines to my will. <br><br>
+                        JavaScript, Java, C#, Python, Bash, PHP
+                    </p>
+                    <a class="green button" href="#programming">Learn more</a>
+                </div>
+                <div class="col-sm-4">
+                    <h2>I like photography</h2>
+                    <p>
+                        Capturing the beauty of the world and expressing my creativity. <br><br>
+                        I take pictures for wallpapers and social.
+                    </p>
+                    <a class="purple button" href="#photography">Learn more</a>
+                </div>
+                <div class="col-sm-4">
+                    <h2>I like customization</h2>
+                    <p>
+                        Your computer should be YOUR computer. <br><br>
+                        I'm a big Linux user and enjoy working on custom themes.
+                    </p>
+                    <a class="blue button" href="#themes">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <a id="themes"></a>
+        <section>
+            <div class="wrapper centre">
+                <h2>Themes</h2>
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 centre">
+                    <div class="slideshow">
+                        <div>
+                            <a href="assets/gnome-shell/mist.png" data-lightbox="themeSet" data-title="Mist" data-link="http://therealpadster.deviantart.com/art/Mist-511758452">
+                                <img data-lazy="assets/gnome-shell/mist-min.jpg" alt="Mist GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/acid.jpg" data-lightbox="themeSet" data-title="ACID" data-link="http://therealpadster.deviantart.com/art/ACID-317583161">
+                                <img data-lazy="assets/gnome-shell/acid-min.jpg" alt="ACID GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/london_smoke_gnome_shell.jpg" data-lightbox="themeSet" data-title="London Smoke" data-link="http://therealpadster.deviantart.com/art/London-Smoke-Gnome-Shell-207708800">
+                                <img data-lazy="assets/gnome-shell/london_smoke_gnome_shell-min.jpg" alt="London Smoke GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/contrail.png" data-lightbox="themeSet" data-title="Contrail" data-link="http://therealpadster.deviantart.com/art/Contrail-313169671">
+                                <img data-lazy="assets/gnome-shell/contrail-min.jpg" alt="Contrail GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/frosted_glass.jpg" data-lightbox="themeSet" data-title="Frosted Glass" data-link="http://therealpadster.deviantart.com/art/Frosted-Glass-274811986">
+                                <img data-lazy="assets/gnome-shell/frosted_glass-min.jpg" alt="Frosted Glass GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/blueberry_ripple.jpg" data-lightbox="themeSet" data-title="Blueberry Ripple" data-link="http://therealpadster.deviantart.com/art/Blueberry-Ripple-284674435">
+                                <img data-lazy="assets/gnome-shell/blueberry_ripple-min.jpg" alt="Blueberry Ripple GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/darksilver.png" data-lightbox="themeSet" data-title="Darksilver" data-link="http://therealpadster.deviantart.com/art/Darksilver-271263369">
+                                <img data-lazy="assets/gnome-shell/darksilver-min.jpg" alt="Darksilver GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/spearmint.jpg" data-lightbox="themeSet" data-title="Spearmint" data-link="http://therealpadster.deviantart.com/art/Spearmint-243580232">
+                                <img data-lazy="assets/gnome-shell/spearmint-min.jpg" alt="Spearmint GNOME-Shell theme">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/gnome-shell/minty_fresh.jpg" data-lightbox="themeSet" data-title="Minty Fresh" data-link="http://therealpadster.deviantart.com/art/Minty-Fresh-256268018">
+                                <img data-lazy="assets/gnome-shell/minty_fresh-min.jpg" alt="Minty Fresh GNOME-Shell theme">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <p>
+                        GNOME-Shell, Metacity, GTK2, Emerald. Just a little GNOME-Shell these days.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a id="photography"></a>
+        <section>
+            <div class="wrapper centre">
+                <h2>Photography</h2>
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 centre">
+                    <div class="slideshow">
+                        <div>
+                            <a href="assets/photos/vanilla_fresh.jpg" data-lightbox="photographySet" data-title="Vanilla Fresh" data-link="http://therealpadster.deviantart.com/art/Vanilla-Fresh-465445588">
+                                <img data-lazy="assets/photos/vanilla_fresh_thumb.jpg" alt="Vanilla Fresh wallpaper">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/photos/gentle_pine.jpg" data-lightbox="photographySet" data-title="Gentle Pine" data-link="http://therealpadster.deviantart.com/art/Gentle-Pine-465417331">
+                                <img data-lazy="assets/photos/gentle_pine_thumb.jpg" alt="Gentle Pine wallpaper">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/photos/green_thumb.jpg" data-lightbox="photographySet" data-title="Green Thumb" data-link="http://therealpadster.deviantart.com/art/Green-Thumb-465451767">
+                                <img data-lazy="assets/photos/green_thumb_thumb.jpg" alt="Green Thumb wallpaper">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/photos/dawn_of_a_new_world.jpg" data-lightbox="photographySet" data-title="Dawn of a New World" data-link="http://therealpadster.deviantart.com/art/Dawn-of-a-New-World-409705596">
+                                <img data-lazy="assets/photos/dawn_of_a_new_world_thumb.jpg" alt="Dawn of a New World wallpaper">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/photos/caelifera_light.jpg" data-lightbox="photographySet" data-title="Caelifera" data-link="http://therealpadster.deviantart.com/art/Caelifera-Light-324178912">
+                                <img data-lazy="assets/photos/caelifera_light_thumb.jpg" alt="Caelifera wallpaper">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="assets/photos/hidden_treasure.jpg" data-lightbox="photographySet" data-title="Hidden Treasure" data-link="http://therealpadster.deviantart.com/art/Hidden-Treasure-649490448">
+                                <img data-lazy="assets/photos/hidden_treasure_thumb.jpg" alt="Hidden Treasure wallpaper">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <p>
+                        I like taking pictures. Here are some of my favourites.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a id="programming"></a>
+        <section>
+            <div class="wrapper">
+                <h2 class="centre">Websites</h2>
+                <div class="wrapper">
+                    <div class="col-sm-6 col-md-6">
+                        <p>
+                            I have developed web sites and applications. This bottom section is going to hold a showcase eventually. Coming soon.&trade;
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <a href="https://plus.google.com/u/0/101446252652134552307" target="_blank">
-            <img src="assets/lg_icon_kit/Flat Minimalistic Circles/32x32 PNG/googleplus.png"/>
+        <a href="https://github.com/theRealPadster" target="_blank">
+            <img src="assets/nucleo-social-icons/round/social-1_round-github.svg" alt="GitHub logo"/>
         </a>
         <a href="https://therealpadster.deviantart.com" target="_blank">
-            <img src="assets/lg_icon_kit/Flat Minimalistic Circles/32x32 PNG/deviantart.png"/>
-        </a>
-        <a href="https://github.com/theRealPadster" target="_blank">
-            <img src="assets/lg_icon_kit/Flat Minimalistic Circles/32x32 PNG/github.png"/>
+            <img src="assets/nucleo-social-icons/round/social-1_round-deviantart.svg" alt="DeviantART logo"/>
         </a>
         <a href="https://linkedin.com/in/isaac-maier-691818107" target="_blank">
-            <img src="assets/lg_icon_kit/Flat Minimalistic Circles/32x32 PNG/linkedin.png"/>
+            <img src="assets/nucleo-social-icons/round/social-1_round-linkedin.svg" alt="LinkedIn logo"/>
+        </a>
+        <a href="https://plus.google.com/u/0/101446252652134552307" target="_blank">
+            <img src="assets/nucleo-social-icons/round/social-1_round-google-plus-custom.svg" alt="Google+ logo"/>
+        </a>
+        <a href="https://www.instagram.com/mrmacroman/" target="_blank">
+            <img src="assets/nucleo-social-icons/round/social-1_round-instagram-custom.svg" alt="Instagram logo"/>
+        </a>
+        <a href="https://open.spotify.com/user/therealpadster" target="_blank">
+            <img src="assets/nucleo-social-icons/round/social-1_round-spotify.svg" alt="Spotify logo"/>
+        </a>
+        <a href="https://steamcommunity.com/id/theRealPadster/" target="_blank">
+            <img src="assets/nucleo-social-icons/round/social-1_round-steam.svg" alt="Steam logo"/>
         </a>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.6.0/slick.min.js"></script>
+    <script src="lightbox2/js/lightbox.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.slideshow').slick({
+            lazyLoad: 'progressive',
+            dots: true,
+            adaptiveHeight: true
+        });
+    });
+    </script>
+
+    <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
