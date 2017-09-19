@@ -7,17 +7,26 @@ body {
 
 header {
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     color: white;
     padding: 1em;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Francois One', cursive;
     font-weight: normal;
+}
+
+h1 {
     font-size: 2.5em;
-    margin: 0px;
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid rgba(0,0,0,0.15) !important;
+    width: 8em;
+    text-align: center;
 }
 
 main {
@@ -129,6 +138,66 @@ section {
         right: 0px;
     }
 }
+
+.grid {
+    .square {
+        float:left;
+        position: relative;
+        width: 30%;
+        padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+        margin:1.66%;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:cover;
+
+        @media(max-width: 767px) {
+            width: 45%;
+            padding-bottom: 45%;
+            margin: 2.5%;
+        }
+
+        @media(max-width: 480px) {
+            width: 80%;
+            padding-bottom: 80%;
+            margin: 5% 10%; //TODO
+        }
+    }
+}
+
+#sq1 {
+    background-image:url('assets/insta/frank.jpg');
+}
+#sq2 {
+    background-image:url('assets/insta/city-beyond.jpg');
+}
+#sq3 {
+    background-image:url('assets/insta/hello-ny.jpg');
+}
+#sq4 {
+    background-image:url('assets/insta/rooftop.jpg');
+}
+#sq5 {
+    background-image:url('assets/insta/city-hall.jpg');
+}
+#sq6 {
+    background-image:url('assets/insta/takenoko.jpg');
+}
+
+// TODO - maybe get this working eventually...
+// video {
+//     width: 100%;
+// }
+//
+// .play-btn {
+//     display: block;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     content: "";
+//     height: 20px;
+//     width: 20px;
+//     background-color: red;
+// }
 
 .full-fixed {
     width: 100%;
