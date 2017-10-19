@@ -1,5 +1,7 @@
 // 1200, 992, 768
 
+@gutter: 15px;
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
@@ -19,8 +21,9 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 2.5em !important;
+    margin: 0 !important;
+    line-height: 1em;
 }
 
 hr {
@@ -105,9 +108,13 @@ section {
     overflow-y: hidden;
 
     p {
-        padding: 0em 0.4em;
         line-height: 1.4em;
     }
+}
+
+ul {
+    padding: 0 @gutter;
+    margin: @gutter 0;
 }
 
 .slideshow img {
