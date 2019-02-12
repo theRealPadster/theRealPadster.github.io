@@ -2,6 +2,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
 }
+a {
+  color: #0B5FCE;
+}
+a:hover,
+a:focus {
+  color: #0C4188;
+}
 header {
   position: fixed;
   top: 0;
@@ -199,13 +206,13 @@ ul {
   color: white;
 }
 .green {
-  background-color: #62c334;
+  background-color: #2B882B;
 }
 .purple {
-  background-color: #9335d5;
+  background-color: #9335DA;
 }
 .blue {
-  background-color: #358fd7;
+  background-color: #3474DB;
 }
 @media (min-width: 768px) {
   .col2 {
