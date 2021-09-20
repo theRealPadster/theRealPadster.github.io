@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import styles from '../../styles/Home.module.scss'
 import { useDarkMode } from 'next-dark-mode'
-import DarkModeToggle from '../components/DarkModeToggle'
+import DarkModeToggle from '../../components/DarkModeToggle'
 
 const Home: NextPage = () => {
 
@@ -20,14 +20,14 @@ const Home: NextPage = () => {
     // TODO: there is probably a better way to achieve dark mode...
     <div className={`${styles.container} ${darkModeActive ? styles.dark : ''}`}>
       <Head>
-        <title>Isaac Maier | Full Stack Developer</title>
+        <title>Isaac Maier | Projects</title>
         <meta name="description" content="Personal portfolio of web development, photography, and desktop customization by Isaac Maier" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Projects
         </h1>
 
         <DarkModeToggle />

@@ -1,5 +1,5 @@
 .dark {
-  background-color: hsl(0, 0, 15%);
+  background-color: hsl(0deg, 0%, 15%);
   color: #eee;
 }
 
@@ -11,6 +11,8 @@
   justify-content: center;
   align-items: center;
   // height: 100vh;
+
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .main {
@@ -58,7 +60,7 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 
   .dark & {
-    background: hsl(0, 0, 8%);
+    background: hsl(0deg, 0%, 8%);
   }
 }
 
@@ -112,17 +114,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0, 90%);
+  background-color: hsl(0deg, 0%, 90%);
 
   .dark & {
-    background-color: hsl(0, 0, 18%);
+    background-color: hsl(0deg, 0%, 18%);
   }
 
   a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 8px;
+    margin: 0 8px;
     // flex-grow: 1;
 
     border-radius: 100%;
@@ -130,7 +132,7 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0px 1px 6px hsla(0, 0, 0, 60%);
+      box-shadow: 0px 1px 6px hsla(0deg, 0%, 0%, 60%);
     }
   }
 }

@@ -1,0 +1,142 @@
+/* The animation code */
+@keyframes go-dark {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+// TODO: grab this from central location
+$darkBg: hsl(0deg, 0%, 15%);
+
+$iconSize: 48px;
+
+// Sun
+.gg-sun {
+  --ggs: 2;
+
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  background:
+    linear-gradient(to bottom, red 4px, transparent 0) no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, blue 4px, transparent 0) no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom, yellow 4px, transparent 0) no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom, green 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+
+  &:hover {
+    transition-duration: 1500ms;
+    background:
+      linear-gradient(to bottom, transparent 4px, transparent 0) no-repeat 5px -6px/2px 6px,
+      linear-gradient(to bottom, transparent 4px, transparent 0) no-repeat 5px 14px/2px 6px,
+      linear-gradient(to bottom, transparent 4px, transparent 0) no-repeat -8px 5px/6px 2px,
+      linear-gradient(to bottom, transparent 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid pink;
+    border-left: 4px solid brown;
+    left: -6px;
+    top: 5px;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+// Moon
+.gg-moon,
+.gg-moon::after,
+.gg-moon::before {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.gg-moon {
+  // background-color: yellow;
+  background-color: transparent;
+  // color: red;
+  color: hsl(56deg, 100%, 50%);
+  --ggs: 2;
+  // top: 100px;
+  // left: 50%;
+
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+  transition-duration: 0.5s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+
+    transition-duration: 0.5s;
+    // top: 18px;
+  }
+
+  //  Testing...
+  // &::before {
+  //   // content: "";
+  //   position: absolute;
+  //   width: 12px;
+  //   height: 12px;
+  //   /*  border: 2px solid transparent; */
+  //   box-shadow: 0 0 0 2px red;
+  //   top: 8px;
+  //   left: 2px;
+  //   /*  top: 18px; */
+  // }
+
+  // Sun mode
+  // &:not(.light):hover,
+  &.dark {
+    border-bottom-color: currentColor;
+
+    &::after {
+      /*   box-shadow: 0 0 0 0; */
+      top: 18px;
+      height: 12px;
+      // width: 18px;
+    }
+    // &::before {
+    //   top: 2px;
+    // }
+  }
+}
+
+.DarkModeToggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
