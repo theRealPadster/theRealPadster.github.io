@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../../styles/Home.module.scss'
 import { useDarkMode } from 'next-dark-mode'
 import DarkModeToggle from '../../components/DarkModeToggle'
@@ -39,15 +40,19 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/projects" className={styles.card}>
-            <h2>Projects &rarr;</h2>
-            <p>Projects I&apos;ve worked on</p>
-          </a>
+          <Link href="/projects">
+            <a className={styles.card}>
+              <h2>Projects &rarr;</h2>
+              <p>Projects I&apos;ve worked on</p>
+            </a>
+          </Link>
 
-          <a href="/contact" className={styles.card}>
-            <h2>Contact &rarr;</h2>
-            <p>Let&apos;s get in touch</p>
-          </a>
+          <Link href="/contact">
+            <a className={styles.card}>
+              <h2>Contact &rarr;</h2>
+              <p>Let&apos;s get in touch</p>
+            </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
